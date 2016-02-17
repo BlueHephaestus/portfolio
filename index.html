@@ -4,7 +4,7 @@
 
   <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/portfolio/assets/images/favicon.ico" type="image/x-icon">
   <title>Blake Edwards</title>
 
@@ -66,124 +66,123 @@
         position: 'bottom'
       });
     });
-  </script>
+ 
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+     </script>
 </head>
 <body>
   <div id="wrapper">
     <div id="sidebar-wrapper">
+      <!--figure out why it won't collapse
+          and also ask question again in #javascript-->
       <img align="center" class="img-circle" id="avatar-pic" src="/portfolio/assets/images/blake_main_pic.jpeg"></img>
       <span class="page-header-title" id="avatar-name">Blake Edwards</span>
       <span class="page-header-skills">
-        <li>Web Developer</li>
-        <li>Thing 2</li>
-        <li>Thing 3</li>
+        <li title="Front End & Back End">Full Stack Developer</li>
+        <li>Efficiency Enthusiast</li>
+        <li>Linux Aficionado </li>
       </span>
       <div class="links-container">
         <!--
         Try making these <li> instead of <img> (or just surround them in <li>) and then try to get the offset-when-scaling thing to work
         -->
         <a href="https://github.com/DarkElement75"><img class=" img-circle img-links" src="/portfolio/assets/images/github.jpg" title="View my Github"></img></a>
-        <a href="#"><img class=" img-circle img-links" src="/portfolio/assets/images/resume.jpg" title="View my Resume"></img></a>
+        <a href="/portfolio/Resume.pdf"><img class=" img-circle img-links" src="/portfolio/assets/images/resume.jpg" title="View my Resume"></img></a>
         <a href="mailto:blakeedwards777@gmail.com"><img class=" img-circle img-links" id="mail-link" src="/portfolio/assets/images/mail_symbol.jpg" title="Email me"></img></a>
-        <a href="#"><img class=" img-circle img-links" id="aboutme-link" src="/portfolio/assets/images/aboutme.jpg" title="My Story"></img></a>
+        <!--<a href="#"><img class=" img-circle img-links" id="aboutme-link" src="/portfolio/assets/images/aboutme.jpg" title="My Story"></img></a>-->
       </div>
     </div>
     <div id="page-content-wrapper">
       <span class="page-header-subtitle">
-        Sample Header
+        My Story
       </span>
+      <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
       <span class="body-text">
-      Ever since I learned how to program my TI-83 Calculator, i've been extremely passionate for programming, whether that be working on my own projects in languages such as Python and Ruby, or working with web development languages for various jobs. Here are some of the languages / libraries I have experience with:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nibh mollis, vestibulum ante eu, tincidunt odio. Sed id tempor est, sit amet egestas risus. In hac habitasse platea dictumst. Nam id tincidunt mauris. Etiam sagittis ipsum ligula, et lacinia odio sodales quis. Nullam vel dapibus mauris, quis vestibulum odio. Donec gravida nisl id felis interdum efficitur. Donec egestas magna turpis. Etiam porta fermentum velit egestas sollicitudin. Duis ornare diam ut ipsum vestibulum, eu pretium quam condimentum. Morbi eleifend augue ac dolor congue porttitor.
-
-Ut justo est, pellentesque in mauris nec, venenatis varius lorem. Aliquam blandit, dolor et lacinia ultricies, neque massa volutpat odio, et egestas lectus nulla in magna. In justo ante, placerat vel lectus non, vehicula placerat metus. Nam sodales facilisis diam nec luctus. Maecenas ut tempus sem. Duis urna eros, gravida et elementum ut, gravida id magna. Proin congue ultrices turpis eleifend sagittis. Nulla quis ligula neque. Ut vehicula tempor ex, sit amet molestie felis iaculis nec. Curabitur eget ipsum pellentesque, molestie elit non, malesuada arcu. Aliquam sagittis eget tellus id vulputate. Donec laoreet arcu nec ex tincidunt, sed sagittis tortor vestibulum. Donec purus eros, eleifend eu hendrerit non, suscipit tempor nisi.
-
-Suspendisse ac blandit lectus. Sed non lacus pretium, molestie ipsum eu, scelerisque nunc. Donec imperdiet ultricies accumsan. Suspendisse tincidunt enim felis, in auctor ipsum eleifend scelerisque. Vestibulum iaculis nunc tellus, ac feugiat justo dignissim eget. Aliquam imperdiet, sapien et viverra vestibulum, elit mi accumsan sapien, at rhoncus leo metus nec justo. Suspendisse facilisis tristique risus, eget aliquet nisl. Duis in est faucibus, viverra magna non, dapibus erat. Cras bibendum sem non lectus efficitur sollicitudin.
-
-Duis aliquet porta tellus a placerat. Morbi auctor iaculis urna, vel iaculis magna tristique a. Mauris condimentum interdum risus blandit dictum. Proin ut sapien tempor, aliquam quam sed, convallis augue. Suspendisse eget sem viverra, pellentesque sem vitae, blandit nisi. Fusce hendrerit at neque id rhoncus. Donec imperdiet bibendum ligula sit amet condimentum. Donec fermentum et lorem eget aliquam. Morbi varius condimentum urna nec tempor. Vestibulum molestie tempor lectus, eget scelerisque ante commodo vitae. Proin tincidunt quam a ligula posuere laoreet. Curabitur non porttitor lectus. In hac habitasse platea dictumst. Sed non felis lacus. Donec imperdiet facilisis rhoncus.
-
-Nulla viverra bibendum ex, nec dapibus nulla ullamcorper in. In suscipit ut massa sit amet posuere. Sed bibendum scelerisque risus, non ullamcorper lectus tristique ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis dictum fermentum risus eget faucibus. Vestibulum sollicitudin egestas tellus, vitae imperdiet massa vehicula laoreet. Nunc pulvinar ultrices feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum, felis in posuere varius, purus enim dapibus massa, id congue ante lectus nec lacus. Integer enim libero, congue finibus justo in, pretium dapibus nunc. Duis porttitor dui lorem.
+        <p>Ever since I learned how to program my TI-83 Calculator, I've been extremely passionate for programming, whether that be working on my own projects in languages such as Python and Ruby, or working with web development languages for various jobs. Here are some of the languages / libraries I have experience with:</p>
       </span>
       <div id="langs-libs">
-        <div class="row">
-          <div class="col-sm-6 exp-list">
-            <!--<span class="exp-header">Languages</span>-->
-            <table class="table table-bordered">
-              <thead> 
-                <tr> 
-                  <th>Languages</th>
-                  <th>Libraries</th>
-                </tr>
-              </thead> 
-              <tbody> 
-                <tr> 
-                  <td>Python</td> 
-                  <td>Twisted</td> 
-                </tr> 
-                <tr> 
-                  <td>Ruby</td> 
-                  <td>Selenium</td> 
-                </tr> 
-                <tr> 
-                  <td>PHP</td> 
-                  <td>Bootstrap 3</td> 
-                </tr> 
-                <tr> 
-                  <td>MySQL</td> 
-                  <td>SQLAlchemy</td> 
-                </tr> 
-                <tr>
-                  <td>Javascript</td>
-                  <td>Nokogiri</td>
-                </tr>
-                <tr>
-                  <td>jQuery</td>
-                  <td>PhantomJS</td>
-                </tr>
-                <tr>
-                  <td>CSS</td>
-                  <td>Wordpress</td>
-                </tr>
-                <tr>
-                  <td>HTML</td>
-                  <td></td>
-                </tr>
-              </tbody> 
-            </table>
-            <!--
-            <table class="table">
-              <thead>
-              </thead>
-              <tbody>
-                <tr>Python</tr>
-                <tr>Ruby</tr>
-                <tr>PHP</tr>
-                <tr>MySQL</tr>
-                <tr>Javascript</tr>
-                <tr>jQuery</tr>
-                <tr>CSS</tr>
-                <tr>HTML</tr>
-              </tbody>
-            </table>
+        <div class="exp-list">
+          <!--
+          <table class="table table-bordered">
+            <thead> 
+              <tr> 
+                <th>Languages</th>
+                <th>Libraries</th>
+              </tr>
+            </thead> 
+            <tbody> 
+              <tr> 
+                <td>Python</td> 
+                <td>Twisted</td> 
+              </tr> 
+              <tr> 
+                <td>Ruby</td> 
+                <td>Selenium</td> 
+              </tr> 
+              <tr> 
+                <td>PHP</td> 
+                <td>Bootstrap 3</td> 
+              </tr> 
+              <tr> 
+                <td>MySQL</td> 
+                <td>SQLAlchemy</td> 
+              </tr> 
+              <tr>
+                <td>JavaScript</td>
+                <td>Nokogiri</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>PhantomJS</td>
+              </tr>
+              <tr>
+                <td>HTML</td>
+                <td>jQuery</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>WordPress</td>
+              </tr>
+            </tbody>
+          </table>
+          -->
+          <div class="row">
+            <div class="col-md-6">
+              <span class="exp-header">Languages</span>
+              <ul>
+                <li>Python</li>
+                <li>Ruby</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <span class="exp-header">Libraries</span>
+              <ul>
+                <li>Twisted
+                <li>Selenium
+                <li>Bootstrap 3
+                <li>SQLAlchemy
+                <li>Nokogiri
+                <li>PhantomJS
+                <li>jQuery
+                <li>Wordpress
+              </ul>
+            </div>
           </div>
-          <div class="col-sm-6 exp-list">
-            <span class="exp-header">Libraries</span>
-            <ul>
-              <li>Twisted</li>
-              <li>Selenium</li>
-              <li>Bootstrap 3</li>
-              <li>SQLAlchemy</li>
-              <li>Nokogiri</li>
-              <li>PhantomJS</li>
-              <li>WordPress</li>
-            </ul>
-          </div>
-            -->
         </div>
       </div>
+      <span class="body-text">
+        <p>I have 2+ years of experience in the field and am confident that whatever challenge that I come across, I will figure out a solution. I am a quick learner, enjoy working collaboratively with productive people, and have evidence of my past work to back up my experience, as shown on my <a href="/portfolio/Resume.pdf">Resume</a>.If you look at my <a href="https://github.com/DarkElement75/tecsbot">Github</a>, you can see many of the projects I have undertaken for both jobs and for my own enjoyment, anything ranging from a new site design for <a href="http://tulippm.com">TulipPM</a> to a 4+ month project on a <a href="https://github.com/DarkElement75/tecsbot">Twitch.tv chat and moderation bot.</a></p>
+        <p>I am currently the Lead Developer of Tulip Property Management, a startup whose website you can find <a href="http://tulippm.com">here</a>, and whose new site design (WIP) you can find <a href="http://ec2-54-172-21-9.compute-1.amazonaws.com/new_site_design/">here.</a> </p>
+        <p>Thanks for reading! If you have any questions, feel free to contact me via <a href="mailto:blakeedwards777@gmail.com">email</a>.</p>
     </div>
-  </div>
-  <div id="whitespace">
   </div>
 </body>
 </html>
