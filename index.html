@@ -8,27 +8,15 @@
   <link rel="shortcut icon" href="/portfolio/assets/images/favicon.ico" type="image/x-icon">
   <title>Blake Edwards</title>
 
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.css" />
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/style.scss">
+  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/style.css">
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 
+  <!--
   <script>
-    $(document).ready(function(){
-      $(".img-links").hover(
-        function(){
-          $(this).css('margin-top', '-20px');
-        },
-        function(){
-          $(this).css('margin-top', '0px');
-        }
-      );
-    });
     //begin konami code stuff
     var secret = "38384040373937396665"; //konami code
     var input = "";
@@ -56,39 +44,28 @@
     //end konami code stuff
 
   </script>
-  <script>
-    $(document).ready(function() {
-      $('.tooltips').tooltipster({
-        position: 'bottom'
-      });
-    });
- 
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-     </script>
+  -->
 </head>
 <body>
   <div class="container">
     <div class="nav">
       <section class="header-section">
-        <img align="center" class="img-circle" id="avatar-pic" src="/portfolio/assets/images/blake_main_pic.jpeg"></img>
+        <img align="center" class="img-circle" id="avatar-pic" title="Blake Edwards" src="/portfolio/assets/images/blake_main_pic.jpeg"></img>
         <span class="page-header-title" id="avatar-name">Blake Edwards</span>
-        Full Stack Developer
+        <span class="page-header-subtext">Full Stack Developer</span>
       </section>
       <section class="projects-section">
         <ul id="projects" style="text-align:left; list-style-type: none;">
-          <a href="https://github.com/DarkElement75/tecsbot"><li class="project-list-item"><img src="/portfolio/assets/images/twitch_logo.png" /><span>Tecsbot</span></li></a>
-          <a href="ec2-54-172-21-9.compute-1.amazonaws.com/new_site_design"><li class="project-list-item"><img src="/portfolio/assets/images/tulip_logo.png" /><span>Tulip PM</span></li></a>
-          <a href="http://clemsonumc.org/"><li class="project-list-item"><img src="/portfolio/assets/images/church_icon.png" /><span>CUMC</span></li></a>
-          <a href="http://www.acilos.com/"><li class="project-list-item"><img src="/portfolio/assets/images/reddit_logo.png" /><span>Omnibond</span></li></a>
+          <a href="https://github.com/DarkElement75/tecsbot"><li title="Tecsbot" class="project-list-item"><img src="/portfolio/assets/images/twitch_logo.png" /><span>Tecsbot</span></li></a>
+          <a href="http://ec2-54-172-21-9.compute-1.amazonaws.com/new_site_design"><li title="Tulip PM" class="project-list-item"><img src="/portfolio/assets/images/tulip_logo.png" /><span>Tulip PM</span></li></a>
+          <a href="http://clemsonumc.org/"><li title="CUMC" class="project-list-item"><img src="/portfolio/assets/images/church_icon.png" /><span>CUMC</span></li></a>
+          <a href="http://www.acilos.com/"><li title="Omnibond" class="project-list-item"><img src="/portfolio/assets/images/reddit_logo.png" /><span>Omnibond</span></li></a>
         </ul>
       </section>
       <section class="links-section">
-        <a href="https://github.com/DarkElement75"><img class=" img-circle img-links" src="/portfolio/assets/images/github.jpg" title="View my Github"></img></a>
-        <a href="/portfolio/assets/Resume.pdf"><img class=" img-circle img-links" src="/portfolio/assets/images/resume.jpg" title="View my Resume"></img></a>
-        <a href="mailto:blakeedwards777@gmail.com"><img class=" img-circle img-links" id="mail-link" src="/portfolio/assets/images/mail_symbol.jpg" title="Email me"></img></a>
+        <a title="View my Github" href="https://github.com/DarkElement75"><img class=" img-circle img-links" src="/portfolio/assets/images/github.jpg"></img></a>
+        <a title="View my Resume" href="/portfolio/assets/Resume.pdf"><img class=" img-circle img-links" src="/portfolio/assets/images/resume.jpg"></img></a>
+        <a title="Email Me" href="mailto:blakeedwards777@gmail.com"><img class=" img-circle img-links" id="mail-link" src="/portfolio/assets/images/mail_symbol.jpg"></img></a>
       </section>
     </div>
     <div class="main">
@@ -134,6 +111,5 @@
         <p>Thanks for reading! If you have any questions, feel free to contact me via <a href="mailto:blakeedwards777@gmail.com">email</a>.</p>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
 </body>
 </html>

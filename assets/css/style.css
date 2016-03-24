@@ -7,9 +7,9 @@
 
 /*Image Styles*/
 .img-links{
-  width: 15%;
+  width: 50%;
   transition: all .15s ease-in;
-  margin: 0px 2px;
+  margin: 8px 4px;
 }
 /*End Image Styles*/
 
@@ -57,22 +57,52 @@ input {
 }
 
 .body-text{
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 18px;
+  font-family: 'Open Sans';
+  font-size: 10px;
 }
 
 #mystory{
   text-align: justify;
 }
+.page-header-subtext{
+  display: none;
+}
 /*End Text Styles*/
 
-/*Container Styles*/
-html, body{
-  /*background-image: url("/portfolio/assets/images/hexagon_background.jpg");*/
-  /*color: #fff;*/
-  /*background-size: 100% 100%;*/
+/*List Styles*/
+#projects > a{
+  text-decoration: none!important;
 }
 
+.project-list-item{
+  opacity: 0.8;
+  padding: 5px 0px;
+}
+.project-list-item:hover{
+  opacity: 1;
+}
+
+.project-list-item > span{
+  display: none;
+  margin-left: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.project-list-item > img{
+  width: 40px;
+  height: 40px;
+}
+/*End List Styles*/
+
+/*Container Styles*/
+
+/html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 ul{
   padding-left: 17px;
   padding-top: 5px;
@@ -82,19 +112,31 @@ ul{
   text-align: center;
   padding: 40px;
   margin-left: 0px;
+  padding: 0px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
 }
 
 .exp-list{
   text-align:left;
-  font-family: 'Alegreya Sans', sans-serif;
-  font-size: 18px;
+  font-family: 'Open Sans';
+  font-size: 10px;
 }
 
 #header{
   border-bottom: 1px solid #0275d8;
   padding-bottom: 25px;
   margin-bottom: 40px;
-  
+
 }
 .header-section{
   padding: 20px;
@@ -102,10 +144,11 @@ ul{
 }
 
 .links-section{
-  margin-top: 16px;
+  padding-top: 16px;
+  height: 33vh;
   /*Fix why it won't take up all the space at the bottom*/
   background-color: #1a82f7;
-  box-shadow: inset -inset -10px 0px 10px -7px rgba(0,0,0,0.5);
+  box-shadow: inset -10px 0px 10px -7px rgba(0,0,0,0.5);
 
 }
 
@@ -114,29 +157,32 @@ ul{
   background-color: #1a82f7;
 }
 
-#page-content-wrapper{
-  max-width: 900px;
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 150px;
+.main {
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;  
+}
+
+.nav {
+  transition: all .1s ease-in;
+  background-color: #1a82f7;
+  width: 90px;
+  -ms-flex: 0 100px;
+  -webkit-box-flex:  0;
+  -moz-box-flex:  0;
+  -ms-box-flex:  0;
+  box-flex:  0;  
+  height: 100vh;
 }
 
 .projects-section{
   background-color: #0099f8;
-  padding: 0px 5px;
-  box-shadow: inset 0px 10px 10px -7px rgba(0,0,0,0.5), inset -10px 0px 10px -7px rgba(0,0,0,0.5);
-}
-
-#sidebar-wrapper{
-  padding: 30px 5px;
-  /*change the vertical padding back to 20vh if you want centered*/
-  text-align: center;
-  background-color: #00aaff;
-}
-
-#wrapper{
-  padding-left: 300px;
-  padding-right: 150px;
+  padding: 10px 5px;
+  box-shadow: inset 0px 10px 10px -7px rgba(0,0,0,0.5), inset -10px 0px 10px -7px rgba(0,0,0,0.5), inset 0px -10px 10px -7px rgba(0,0,0,0.5);
 }
 
 /*End Container Styles*/
@@ -151,48 +197,41 @@ ul{
 }
 
 #avatar-pic{
-  width: 25%;
-}
-/* Test Stuff*/
-/html,
-body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
+  width: 100%;
 }
 
-.container {
-  height: 100%;
-  padding: 0px;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-box;
-  display: box;
-  
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -ms-box-orient: horizontal;
-  box-orient: horizontal;
+#avatar-name{
+  margin-bottom: 5px;
+  display: none;
 }
-
-.nav {
-  background-color: #1a82f7;
-  width: 300px;
--ms-flex: 0 100px;
--webkit-box-flex:  0;
--moz-box-flex:  0;
--ms-box-flex:  0;
-box-flex:  0;  
+/*Responsive Styles*/
+@media(min-width:700px) {
+  .nav{
+    width: 300px;
+  }
+  .project-list-item > span,
+  #avatar-name,
+  .page-header-subtext
+  {
+    display: inline-block;
+  }
+  .img-links{
+    width: 15%;
+  }
+  .img-links:hover{
+    margin-top: -20px;
+  }
+  #avatar-pic{
+    width: 25%;
+  }
+  .body-text{
+    font-size: 16px;
+  }
+  .main{
+    padding: 20px 20px 20px 60px;
+  }
+  .exp-list{
+    font-size: 16px;
+  }
 }
-
-
-.main {
-  padding: 20px;
- -ms-flex: 1;
- -webkit-box-flex: 1;
- -moz-box-flex: 1;
- -ms-box-flex: 1;
- box-flex: 1;  
-}/*End Misc ID Styles*/
+/*End Responsive Styles*/
