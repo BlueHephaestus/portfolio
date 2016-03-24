@@ -30,14 +30,17 @@ input {
 /*Text Styles*/
 .page-header-title {
   display: block;
+  /*font-family: 'Titillium Web';*/
   font-family: 'Open Sans';
   font-size: 32px;
+  font-weight: Normal;
   text-align: center;
   margin-top: 10px;
 }
 
 .page-header-subtitle {
   display: block;
+  /*font-family: 'Raleway',serif;*/
   font-family: 'Open Sans';
   font-size: 25px;
   font-weight: Normal;
@@ -45,10 +48,14 @@ input {
   padding-bottom: 18px;
 }
 
-.header-section{
-  text-align: center;
+.page-header-skills{
+  text-align: justify;
+  padding-left: 50px;
+  display: block;
   font-family: 'Open Sans';
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: Normal;
+  opacity: 0.9;
 }
 
 .exp-header{
@@ -71,6 +78,7 @@ html, body{
   /*background-image: url("/portfolio/assets/images/hexagon_background.jpg");*/
   /*color: #fff;*/
   /*background-size: 100% 100%;*/
+  height: 100%;
 }
 
 ul{
@@ -96,17 +104,13 @@ ul{
   margin-bottom: 40px;
   
 }
-.header-section{
-  padding: 20px;
-  box-shadow: inset -10px 0px 10px -7px rgba(0,0,0,0.5);
+
+#langs-libs{
+  /*padding: 10px 15px;*/
 }
 
-.links-section{
+.links-container{
   margin-top: 16px;
-  /*Fix why it won't take up all the space at the bottom*/
-  background-color: #1a82f7;
-  box-shadow: inset -inset -10px 0px 10px -7px rgba(0,0,0,0.5);
-
 }
 
 #main-sidebar{
@@ -121,18 +125,18 @@ ul{
   padding-right: 150px;
 }
 
-.projects-section{
-  background-color: #0099f8;
-  padding: 0px 5px;
-  box-shadow: inset 0px 10px 10px -7px rgba(0,0,0,0.5), inset -10px 0px 10px -7px rgba(0,0,0,0.5);
-}
-
 #sidebar-wrapper{
   padding: 30px 5px;
   /*change the vertical padding back to 20vh if you want centered*/
   text-align: center;
   background-color: #00aaff;
 }
+
+/*#whitespace{
+  padding-top: 500px;
+  margin-top: 500px;
+}
+*/
 
 #wrapper{
   padding-left: 300px;
@@ -153,46 +157,4 @@ ul{
 #avatar-pic{
   width: 25%;
 }
-/* Test Stuff*/
-/html,
-body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  height: 100%;
-  padding: 0px;
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-box;
-  display: box;
-  
-  -ms-flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -ms-box-orient: horizontal;
-  box-orient: horizontal;
-}
-
-.nav {
-  background-color: #1a82f7;
-  width: 300px;
--ms-flex: 0 100px;
--webkit-box-flex:  0;
--moz-box-flex:  0;
--ms-box-flex:  0;
-box-flex:  0;  
-}
-
-
-.main {
-  padding: 20px;
- -ms-flex: 1;
- -webkit-box-flex: 1;
- -moz-box-flex: 1;
- -ms-box-flex: 1;
- box-flex: 1;  
-}/*End Misc ID Styles*/
+/*End Misc ID Styles*/

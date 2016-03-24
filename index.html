@@ -8,20 +8,16 @@
   <link rel="shortcut icon" href="/portfolio/assets/images/favicon.ico" type="image/x-icon">
   <title>Blake Edwards</title>
 
-  <script src="/portfolio/assets/js/jquery-1.12.0.min.js"></script>
-  <script type="text/javascript" src="/portfolio/assets/js/jquery.tooltipster.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/simple-sidebar.css">
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/font-awesome-4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/tooltipster.css" />
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/fonts/google-open-sans.css">
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/fonts/titillium_web.css" />
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/play.css">
-  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.css" />
+  <link rel="stylesheet" type="text/css" href="/portfolio/assets/css/style.scss">
 
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,300' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'> 
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+
   <script>
     $(document).ready(function(){
       $(".img-links").hover(
@@ -74,84 +70,38 @@
      </script>
 </head>
 <body>
-  <div id="wrapper">
-    <div id="sidebar-wrapper">
-      <!--figure out why it won't collapse
-          and also ask question again in #javascript-->
-      <img align="center" class="img-circle" id="avatar-pic" src="/portfolio/assets/images/blake_main_pic.jpeg"></img>
-      <span class="page-header-title" id="avatar-name">Blake Edwards</span>
-      <span class="page-header-skills">
-        <li title="Front End & Back End">Full Stack Developer</li>
-        <li>Efficiency Enthusiast</li>
-        <li>Linux Aficionado </li>
-      </span>
-      <div class="links-container">
-        <!--
-        Try making these <li> instead of <img> (or just surround them in <li>) and then try to get the offset-when-scaling thing to work
-        -->
+  <div class="container">
+    <div class="nav">
+      <section class="header-section">
+        <img align="center" class="img-circle" id="avatar-pic" src="/portfolio/assets/images/blake_main_pic.jpeg"></img>
+        <span class="page-header-title" id="avatar-name">Blake Edwards</span>
+        Full Stack Developer
+      </section>
+      <section class="projects-section">
+        <ul id="projects" style="text-align:left; list-style-type: none;">
+          <a href="https://github.com/DarkElement75/tecsbot"><li class="project-list-item"><img src="/portfolio/assets/images/twitch_logo.png" /><span>Tecsbot</span></li></a>
+          <a href="ec2-54-172-21-9.compute-1.amazonaws.com/new_site_design"><li class="project-list-item"><img src="/portfolio/assets/images/tulip_logo.png" /><span>Tulip PM</span></li></a>
+          <a href="http://clemsonumc.org/"><li class="project-list-item"><img src="/portfolio/assets/images/church_icon.png" /><span>CUMC</span></li></a>
+          <a href="http://www.acilos.com/"><li class="project-list-item"><img src="/portfolio/assets/images/reddit_logo.png" /><span>Omnibond</span></li></a>
+        </ul>
+      </section>
+      <section class="links-section">
         <a href="https://github.com/DarkElement75"><img class=" img-circle img-links" src="/portfolio/assets/images/github.jpg" title="View my Github"></img></a>
-        <a href="/portfolio/Resume.pdf"><img class=" img-circle img-links" src="/portfolio/assets/images/resume.jpg" title="View my Resume"></img></a>
+        <a href="/portfolio/assets/Resume.pdf"><img class=" img-circle img-links" src="/portfolio/assets/images/resume.jpg" title="View my Resume"></img></a>
         <a href="mailto:blakeedwards777@gmail.com"><img class=" img-circle img-links" id="mail-link" src="/portfolio/assets/images/mail_symbol.jpg" title="Email me"></img></a>
-        <!--<a href="#"><img class=" img-circle img-links" id="aboutme-link" src="/portfolio/assets/images/aboutme.jpg" title="My Story"></img></a>-->
-      </div>
+      </section>
     </div>
-    <div id="page-content-wrapper">
+    <div class="main">
       <span class="page-header-subtitle">
         My Story
       </span>
-      <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>-->
       <span class="body-text">
         <p>Ever since I learned how to program my TI-83 Calculator, I've been extremely passionate for programming, whether that be working on my own projects in languages such as Python and Ruby, or working with web development languages for various jobs. Here are some of the languages / libraries I have experience with:</p>
-      </span>
       <div id="langs-libs">
         <div class="exp-list">
-          <!--
-          <table class="table table-bordered">
-            <thead> 
-              <tr> 
-                <th>Languages</th>
-                <th>Libraries</th>
-              </tr>
-            </thead> 
-            <tbody> 
-              <tr> 
-                <td>Python</td> 
-                <td>Twisted</td> 
-              </tr> 
-              <tr> 
-                <td>Ruby</td> 
-                <td>Selenium</td> 
-              </tr> 
-              <tr> 
-                <td>PHP</td> 
-                <td>Bootstrap 3</td> 
-              </tr> 
-              <tr> 
-                <td>MySQL</td> 
-                <td>SQLAlchemy</td> 
-              </tr> 
-              <tr>
-                <td>JavaScript</td>
-                <td>Nokogiri</td>
-              </tr>
-              <tr>
-                <td>CSS</td>
-                <td>PhantomJS</td>
-              </tr>
-              <tr>
-                <td>HTML</td>
-                <td>jQuery</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>WordPress</td>
-              </tr>
-            </tbody>
-          </table>
-          -->
           <div class="row">
             <div class="col-md-6">
-              <span class="exp-header">Languages</span>
+              <span class="exp-header"><u>Languages</u></span>
               <ul>
                 <li>Python</li>
                 <li>Ruby</li>
@@ -163,26 +113,27 @@
               </ul>
             </div>
             <div class="col-md-6">
-              <span class="exp-header">Libraries</span>
+              <span class="exp-header"><u>Libraries</u></span>
               <ul>
-                <li>Twisted
-                <li>Selenium
-                <li>Bootstrap 3
-                <li>SQLAlchemy
-                <li>Nokogiri
-                <li>PhantomJS
-                <li>jQuery
-                <li>Wordpress
+                <li>Twisted</li>
+                <li>Selenium</li>
+                <li>Bootstrap 3</li>
+                <li>SQLAlchemy</li>
+                <li>Nokogiri</li>
+                <li>PhantomJS</li>
+                <li>jQuery</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      </span>
       <span class="body-text">
         <p>I have 2+ years of experience in the field and am confident that whatever challenge that I come across, I will figure out a solution. I am a quick learner, enjoy working collaboratively with productive people, and have evidence of my past work to back up my experience, as shown on my <a href="/portfolio/Resume.pdf">Resume</a>.If you look at my <a href="https://github.com/DarkElement75/tecsbot">Github</a>, you can see many of the projects I have undertaken for both jobs and for my own enjoyment, anything ranging from a new site design for <a href="http://tulippm.com">TulipPM</a> to a 4+ month project on a <a href="https://github.com/DarkElement75/tecsbot">Twitch.tv chat and moderation bot.</a></p>
         <p>I am currently the Lead Developer of Tulip Property Management, a startup whose website you can find <a href="http://tulippm.com">here</a>, and whose new site design (WIP) you can find <a href="http://ec2-54-172-21-9.compute-1.amazonaws.com/new_site_design/">here.</a> </p>
         <p>Thanks for reading! If you have any questions, feel free to contact me via <a href="mailto:blakeedwards777@gmail.com">email</a>.</p>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
 </body>
 </html>
